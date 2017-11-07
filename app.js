@@ -15,27 +15,31 @@ app.get('/', function(request, response) {
     response.render('home');
 });
 
-app.get('/about', function(request, response) {
+app.get('/home.html', function(request, response) {
+    response.render('home');
+});
+
+app.get('/about.html', function(request, response) {
     response.render('about');
 });
 
-app.get('/beerStyle', function(request, response) {
+app.get('/beerStyle.html', function(request, response) {
     response.render('beerStyle');
 });
 
-app.get('/contact', function(request, response) {
+app.get('/contact.html', function(request, response) {
     response.render('contact');
 });
 
-app.get('/process', function(request, response) {
+app.get('/process.html', function(request, response) {
     response.render('process');
 });
 
-app.get('/references', function(request, response) {
+app.get('/references.html', function(request, response) {
     response.render('references');
 });
 
-app.get('/resources', function(request, response) {
+app.get('/resources.html', function(request, response) {
     response.render('resources');
 });
 

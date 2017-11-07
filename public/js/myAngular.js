@@ -4,7 +4,7 @@ myAngular.controller('ctrl1', function($scope) {
 
   $scope.first = 1;
   $scope.second = 1;
-
+    
 });
 
 myAngular.controller('mousePop', function($scope) {

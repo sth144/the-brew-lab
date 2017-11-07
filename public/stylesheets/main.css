@@ -1,27 +1,94 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
+body {
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    background-attachment: fixed;
+    background-color: #FFEEC1;
+}
+
+
+.theme-dropdown .dropdown-menu {
+    position: static;
     display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+    margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+    margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+    width: auto;
+}
+
+.textBox {
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+.navbar-header button {
+    align-content: left;
+}
+
+.carousel-inner .item {
+    align-content: center;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    height: 500px;
+    width: 900px;
+}
+
+.line {
+    display:block;
+    width: 25%;
+    float:left;
+}
+
+.onOffp {
+    display: none;
+}
+
+.line > li {
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 20px;
+    
+}
+
+.selector {
+    width: 140px;
+    margin-right: 5%;
+}
+
+.panel {
+    display: none;
+}
+
+#pilsener > .panel-heading, #gose > .panel-heading {
+    background: #fcf7b9;
+}
+
+#indiaPaleAle > .panel-heading, #saison > .panel-heading {
+    background: #fee7a4;
+}
+
+#brownAle > .panel-heading, #lambic > .panel-heading {
+    background: #83533a;
+    color: white;
+}
+
+#porter > .panel-heading {
+    background: #500000;
+    color: white;
+}
+
+#oktoberfest > .panel-heading {
+    background: #e5ad2a;
+}
+
+
+
 

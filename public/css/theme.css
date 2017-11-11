@@ -109,6 +109,7 @@ footer {
 }
 
 .panel-body > img, .onOffp > img {
+    margin-bottom: 20px;
     height: 320px;
     max-width: 500px;
 }

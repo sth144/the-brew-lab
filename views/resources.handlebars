@@ -1,10 +1,13 @@
 <div ng-controller="mousePop">
 
     <div class="page-header">
-        <h1>Resources</h1>
+        <div class="jumbotron">    
+            <h1>Resources</h1>
+        </div>
     </div>
             
     <ul class="line">
+        <h1>Web Links</h1>
         <li>
             <a href="http://www.homebrew.org">homebrew.org</a> 
         </li>
@@ -22,35 +25,29 @@
         </li>
         <p>
             At vero eos et accusamus et iusto odio dignissimos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-        </p>    
-        <li>Lauter</li>
+        </p>
+        <h1>Downloads</h1>        
+        <li>
+            <a href="xls/template082817.xlsx" download>Brewday Spreadsheet Template</a>
+        </li>
         <p>
             At vero eos et accusamus et iusto odio dignissimos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit    
         </p>
-        <li>Boil</li>
-        <p>
-            At vero eos et accusamus et iusto odio dignissimos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit    
-        </p>
-        <li>Cool</li>
-        <p>
-            At vero eos et accusamus et iusto odio dignissimos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit    
-        </p>
-        <li>Ferment</li>                   
-        <p>
-            At vero eos et accusamus et iusto odio dignissimos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit    
-        </p>  
-        <li>Dispense</li>
-        <p>
-            At vero eos et accusamus et iusto odio dignissimos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit    
-        </p>
-        <li>Condition</li>
-        <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem 
-        </p>
-        <li>Enjoy</li>
-        <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem 
-        </p>
-    </ul>    
+    </ul> 
+    
+        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+        <div id="player"></div>
+            <div id="player2"></div>
+
+    
+    
     
 </div>
+
+<style>
+    #resourcelink {
+        background: #EEEEEE;
+    }
+</style>
+
+<script type="text/javascript" src="js/youtubeAJAX.js"></script>

@@ -1,12 +1,19 @@
 body {
-    padding-left: 10%;
-    padding-top: 5%;
-    padding-right: 10%;
-    padding-bottom: 30px;
     background-attachment: fixed;
     background-color: #FFEEC1;
 }
 
+footer {
+    background-color: #EEEEEE;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #999999;
+    height: 400px;
+    padding-left: 10%;
+    padding-top: 4%;
+}
 
 .theme-dropdown .dropdown-menu {
     position: static;
@@ -15,16 +22,24 @@ body {
 }
 
 .theme-showcase > p > .btn {
+
     margin: 5px 0;
 }
 
-.theme-showcase .navbar .container {
+.theme-showcase {
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 10%;
+    /* keep footer at bottom */
+    margin-bottom: 10%;
     width: auto;
 }
 
 .textBox {
+    margin-top:30px;
     margin-bottom: 20px;
     align-content: center;
+    font-size: 18px;
 }
 
 .navbar-header button {
@@ -45,26 +60,75 @@ body {
     display:block;
     width: 25%;
     float:left;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.linep1 {
+    display:block;
+    width: 12%;
+    float:left;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.linep6 {
+    display:block;
+    width: 60%;
+    float:left;
+    margin-top: 30px;
+}
+
+.linep8 {
+    display:block;
+    width: 80%;
+    float:left;
+    margin-top: 30px;
 }
 
 .onOffp {
     display: none;
 }
 
-.line > li {
-    font-size: 30px;
+.line > a, .line > li {
+    font-size: 20px;
     font-weight: 100;
-    margin-top: 20px;
     
 }
 
 .selector {
-    width: 140px;
+    width: 170px;
     margin-right: 5%;
+    font-size: 20px;
 }
 
 .panel {
     display: none;
+    text-align: left;
+    width: 74%;
+}
+
+.panel-body > img, .onOffp > img {
+    height: 320px;
+    max-width: 500px;
+}
+
+.container-fluid {
+    margin-top: 40px;
+    margin-right: 15%;
+    text-align: center;
+}
+
+.embeddedIcon {
+    height: 60px;
+}
+
+#topIcon {
+    margin-left: 100%;
+}
+
+#bottomIcon {
+    margin-left: 100%;
 }
 
 #pilsener > .panel-heading, #gose > .panel-heading {
@@ -89,6 +153,19 @@ body {
     background: #e5ad2a;
 }
 
+#footer-myinfo {
+    position: static;
+}
 
+#player {
+    margin-top: 100px;
+    margin-left: 4%
+}
 
+#instruct {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20%;
+    position: static;
+}
 

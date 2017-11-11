@@ -15,31 +15,35 @@ app.get('/', function(request, response) {
     response.render('home');
 });
 
-app.get('/home.html', function(request, response) {
+app.get('/home', function(request, response) {
     response.render('home');
 });
 
-app.get('/about.html', function(request, response) {
+app.get('/about', function(request, response) {
     response.render('about');
 });
 
-app.get('/beerStyle.html', function(request, response) {
+app.get('/beerStyle', function(request, response) {
     response.render('beerStyle');
 });
 
-app.get('/contact.html', function(request, response) {
+app.get('/contact', function(request, response) {
     response.render('contact');
 });
 
-app.get('/process.html', function(request, response) {
+app.get('/equipment', function(request, response) {
+    response.render('equipment');
+});
+
+app.get('/process', function(request, response) {
     response.render('process');
 });
 
-app.get('/references.html', function(request, response) {
+app.get('/references', function(request, response) {
     response.render('references');
 });
 
-app.get('/resources.html', function(request, response) {
+app.get('/resources', function(request, response) {
     response.render('resources');
 });
 

@@ -11,7 +11,7 @@
     	<!-- The above 3 meta tags must come first in the head;-->
     	<meta name="description" content="">
     	<meta name="author" content="">
-    	<link rel="icon" href="favicon.ico">     
+    	<link rel="icon" href="ico/flask.ico">     
         <!-- Custom styles for this template -->
     	<link href="css/theme.css" rel="stylesheet">
         <!-- Latest compiled and minified CSS -->
@@ -20,44 +20,88 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>        
         
-        <title>Homebrew Labs</title>
+        <title>The Brew Lab</title>
         <link rel="stylesheet" type="text/css" href="css/theme.css" />
     </head>
     <body>
+
         <!-- AngularJS: add controller to view-->
 		<div ng-controller="ctrl1">  
             <!-- Bootstrap: navigation bar -->
-		    <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="home.html">Homebrew Labs</a>
+		    <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="linep6">
+                    <div class="container">
+
+                        <div class="navbar-header">
+
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+
+                            <a class="navbar-brand" href="home">The Brew Lab</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li id="equiplink"><a href="equipment">Equipment</a></li>
+                                <li id="proclink"><a href="process">Process</a></li>
+                                <li id="stylelink"><a href="beerStyle">Styles</a></li>
+                                <li id="resourcelink"><a href="resources">Resources</a></li>
+                                <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">     About       <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="contact">Contact</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="references">References</a></li>
+                                </ul>   
+                            </ul>
+
+
+                        </div><!--/.nav-collapse -->
                     </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li><a href="process.html">Process</a></li>
-                            <li><a href="beerStyle.html">Styles</a></li>
-                            <li><a href="resources.html">Resources</a></li>
-                            <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About       <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="references.html">References</a></li>
-                            </ul>   
-                        </ul>
-                    </div><!--/.nav-collapse -->
                 </div>
+                <div class="line">
+                    <img class="embeddedIcon" id="topIcon" src="ico/myiconTop.jpg">
+                </div>
+
+                            
+                        
             </nav>
             <div class="container theme-showcase">
                 {{{body}}}
             </div>
+                
+            <!--Footer-->
+            <footer class="page-footer blue center-on-small-only">
+
+
+                <div class="linep1">
+                    <a href="equipment">Equipment</a><br>
+                    <a href="process">Process</a><br>
+                    <a href="beerStyles"> Styles</a><br>
+                    <a href="resources">Resources</a><br>
+                    <a href="contact">Contact</a><br>
+                </div>
+
+                <div class="linep6">
+                    <img class="embeddedIcon" id="bottomIcon" src="ico/myiconBottom.jpg">
+                </div>
+
+                <div class="container-fluid linep8">
+
+                    <p id="footer-myinfo">
+                        <p>Sean Hinds 2017</p>
+                        <a href="https://www.github.com/sth144"> Check out my GitHub </a>
+                    </p>
+
+
+                </div>
+
+            </footer>
         
         </div>    
         

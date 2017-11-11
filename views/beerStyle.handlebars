@@ -1,98 +1,117 @@
 <div ng-controller="sel">
     <div class="page-header">
-        <h1>Common Beer Styles</h1>
+        <div class="jumbotron">
+            <h1>Common Beer Styles</h1>
+        </div>
+
     </div>
 
-    <select class="selector line" id="selectBox" size="4">
-        <option value="lager" id="s1">Pilsener</option>
-        <option value="lager" id="s2">India Pale Ale</option>
-        <option value="lager" id="s3">Brown Ale</option>
-        <option value="lager" id="s4">Porter</option>
-        <option value="lager" id="s5">Stout</option>
-        <option value="lager" id="s6">Oktoberfest</option>
-        <option value="lager" id="s7">Lambic</option>
-        <option value="lager" id="s8">Saison</option>
-        <option value="lager" id="s9">Bock</option>
-        <option value="lager" id="s10">Gose</option>
+    <select class="selector linep1 form-control" id="selectBox" size="6" ng-change="update()">
+        <option id="s1">Pilsener</option>
+        <option id="s2">India Pale Ale</option>
+        <option id="s3">Brown Ale</option>
+        <option id="s4">Porter</option>
+        <option id="s5">Stout</option>
+        <option id="s6">Oktoberfest</option>
+        <option id="s7">Lambic</option>
+        <option id="s8">Saison</option>
+        <option id="s9">Bock</option>
+        <option id="s10">Gose</option>
     </select>
-    <div class="panel line panel-default" id="pilsener">
+    <div class="panel linep8 panel-default" id="pilsener">
         <div class="panel-heading">
             <h3 class="panel-title">Pilsener</h3>
         </div>
         <div class="panel-body">
+            <img src="img/pils.jpg">
             Panel content
         </div>
     </div>
-    <div class="panel line panel-default" id="indiaPaleAle">
+    <div class="panel linep8 panel-default" id="indiaPaleAle">
         <div class="panel-heading">
             <h3 class="panel-title">India Pale Ale</h3>
         </div>
         <div class="panel-body">
+            <img src="img/ipa.jpg">
             Panel content
         </div>
     </div>
-    <div class="panel line panel-default" id="brownAle">
+    <div class="panel linep8 panel-default" id="brownAle">
         <div class="panel-heading">
             <h3 class="panel-title">Brown Ale</h3>
         </div>
         <div class="panel-body">
+            <img src="img/brown.jpg">
             Panel content
         </div>
     </div>
-    <div class="panel line panel-default" id="porter">
+    <div class="panel linep8 panel-default" id="porter">
         <div class="panel-heading">
             <h3 class="panel-title">Porter</h3>
         </div>
         <div class="panel-body">
+            <img src="img/porter.jpg">
             Panel content
         </div>
     </div>
-    <div class="panel line panel-default" id="stout">
+    <div class="panel linep8 panel-default" id="stout">
         <div class="panel-heading">
             <h3 class="panel-title">Stout</h3>
         </div>
         <div class="panel-body">
+            <img src="img/stout.jpg">
             Panel content
         </div>
     </div>
-    <div class="panel line panel-default" id="oktoberfest">
+    <div class="panel linep8 panel-default" id="oktoberfest">
         <div class="panel-heading">
             <h3 class="panel-title">Oktoberfest</h3>
         </div>
         <div class="panel-body">
+            <img src="img/oktoberfest.jpg">
             Panel content
         </div>
     </div>
-    <div class="panel line panel-default" id="lambic">
+    <div class="panel linep8 panel-default" id="lambic">
         <div class="panel-heading">
             <h3 class="panel-title">Lambic</h3>
         </div>
         <div class="panel-body">
+            <img src="img/lambic.jpeg">
             Panel content
         </div>
     </div>
-    <div class="panel line panel-default" id="saison">
+    <div class="panel linep8 panel-default" id="saison">
         <div class="panel-heading">
             <h3 class="panel-title">Saison</h3>
         </div>
         <div class="panel-body">
+            <img src="img/saison.jpg">
             Panel content
         </div>
     </div>
-    <div class="panel line panel-default" id="bock">
+    <div class="panel linep8 panel-default" id="bock">
         <div class="panel-heading">
             <h3 class="panel-title">Bock</h3>
         </div>
         <div class="panel-body">
+            <img src="img/bock.jpg">
             Panel content
     </div>
     </div>
-    <div class="panel line panel-default" id="gose">
+    <div class="panel linep8 panel-default" id="gose">
         <div class="panel-heading">
             <h3 class="panel-title">Gose</h3>
         </div>
         <div class="panel-body">
+            <img src="img/gose.jpg">
             Panel content
         </div>
     </div>
 </div>
+
+<style>
+    #stylelink {
+        background: #EEEEEE;
+    }
+</style>

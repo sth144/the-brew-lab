@@ -2,18 +2,34 @@ var myAngular = angular.module('myAngular', []);
 
 myAngular.controller('ctrl1', function($scope) {
 
-  $scope.first = 1;
-  $scope.second = 1;
+    $scope.first = 1;
+    $scope.second = 1;
+    
+    $("#navbar li").click(function() {
+        $(this).addClass("active");
+    });
     
 });
 
 myAngular.controller('mousePop', function($scope) {
     
+    // These targets appear on both equipment and process pages. This is perfectly fine
     var targets =  
-        [["lFirst", "pFirst"], ["lSecond", "pSecond"], ["lThird",     "pThird"], ["lFourth", "pFourth"], ["lFifth", "pFifth"], ["lSixth", "pSixth"], ["lSeventh", "pSeventh"], ["lEigth", "pEighth"], ["lNinth", "pNinth"], ["lTenth", "pTenth"], 
+        [["lFirst", "pFirst"], ["lSecond", "pSecond"], ["lThird",     "pThird"], ["lFourth", "pFourth"], ["lFifth", "pFifth"], ["lSixth", "pSixth"], ["lSeventh", "pSeventh"], ["lEighth", "pEighth"], ["lNinth", "pNinth"], ["lTenth", "pTenth"], 
         ["lRes1", "pRes1"], ["lRes2", "pRes2"], ["lRes3", "pRes3"], ["lRes4", "pRes4"], ["lRes5", "pRes5"], ["lRes6", "pRes6"], ["lRes7", "pRes7"], ["lRes8", "pRes8"], ["lRes9", "pRes9"], ["lRes10", "pRes10"]];
 
     $scope.mouseOver = function(event) {
+
+        var instruct = document.getElementById("instruct");
+        instruct.style.display = "none";
+
+        for (var j = 0; j < targets.length; j++) {
+            var tar = document.getElementById(targets[j][1]);
+            if (tar) {
+                tar.style.display = "none";
+                event.stopPropagation;
+            }
+        }
 	    var el = event.target;
         var i;
         for (var j = 0; j < targets.length; j++) {
@@ -58,7 +74,7 @@ myAngular.controller('sel', function($scope) {
 
     var beers = document.getElementById("selectBox");
 
-    beers.addEventListener("click", function() {
+    beers.addEventListener("change", function() {
 
         for (var k = 0; k < targs.length; k++) {
             console.log("hello");
@@ -78,8 +94,6 @@ myAngular.controller('sel', function($scope) {
         var tPan = document.getElementById(targs[i].strTarg);
         tPan.style.display = "inline-block";
 
-
-
     });
 
     function qStrFromSelect(box) {
@@ -93,4 +107,6 @@ myAngular.controller('sel', function($scope) {
         return box.options[box.selectedIndex].text;
 
     }
+
+    
 });

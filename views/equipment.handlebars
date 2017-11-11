@@ -1,0 +1,140 @@
+<div ng-controller="mousePop">
+    <div class="page-header">
+        <div class="jumbotron">
+            <h1>Equipment</h1>
+        </div>
+    </div>
+
+    <ul class="linep1 list-group">
+        <a href="#" id="lFirst" ng-mouseover="mouseOver($event)" class="list-group-item">Kettle</a>
+        <a id="lSecond" ng-mouseover="mouseOver($event)" class="list-group-item">Mash and Lauter Tun</a>
+        <a id="lThird" ng-mouseover="mouseOver($event)" class="list-group-item">Siphon</a>        
+        <a id="lFourth" ng-mouseover="mouseOver($event)" class="list-group-item">Wort Chiller</a>
+        <a id="lFifth" ng-mouseover="mouseOver($event)" class="list-group-item">Fermentors</a>
+        <a id="lSixth" ng-mouseover="mouseOver($event)" class="list-group-item">Analytical</a>
+        <a id="lSeventh" ng-mouseover="mouseOver($event)" class="list-group-item">Dispensing</a>
+        <a id="lEighth" ng-mouseover="mouseOver($event)" class="list-group-item">Sanitizer</a>
+        <a id="lNinth" ng-mouseover="mouseOver($event)" class="list-group-item">Automation</a>
+    </ul>
+    
+    <div id="instruct">(Mouse over items on the left to view)</div>
+
+    <div class="onOffp panel panel-default linep8" id="pFirst">
+        <div class="panel-heading">
+            <h3 class="panel-title">Kettle</h3>
+        </div>
+        <div class="panel-body">
+            <img src="img/kettle.jpg">         
+            <br>
+            To boil your wort, you'll want a large kettle. The kettle should hold at least 5 gallons. Some people use turkey friers. If you wish to brew outdoors, you'll need to buy a propane burner to heat the kettle. Otherwise, a gas stove will work. Electric stoves will work, but they really arent ideal for heating large volumes.
+        </div>
+    </div>
+    
+    <div class="onOffp linep8 panel panel-default" id="pSecond">
+        <div class="panel-heading">
+            <h3 class="panel-title">Mash Tun</h3>
+        </div>
+        <div class="panel-body">
+            <img src="img/mashTun.jpg">        
+            <br>
+            You'll want a vessel in which to mash your grist. 
+            <br>
+            <img src="img/lauterTun.jpg">   
+        </div>
+    </div>
+    
+    <div class="onOffp linep8 panel panel-default" id="pThird">
+        <div class="panel-heading">
+            <h3 class="panel-title">Siphon</h3>
+        </div>
+        <div class="panel-body">
+            <img src="img/siphon.jpg">         
+            <br>
+            A siphon is useful for transferring large volumes of liquid between vessels. An autosiphon can be purchased at any store that sells brewing or winemaking equipment. This tool allows you to start the siphon flowing with just a few pumps. Polyvinyl tubing can be used at cooler temperatures (under 110&degF), whereas silicone tubing can be used at higher temperatures. Thus, you could use silicone to transfer hot wort from the mash/lauter tun to the boil kettle, and polyvinyl tubing to transfer chilled wort to the fermentor.
+        </div>
+    </div>
+
+    <div class="onOffp linep8 panel panel-default" id="pFourth">
+        <div class="panel-heading">
+            <h3 class="panel-title">Wort Chiller</h3>
+        </div>
+        <div class="panel-body">
+            <img src="img/chiller.jpg">         
+            <br>
+            A wort chiller is a coil of copper (or other metal) tubing. You can quickly chill your wort after the boil by running cold water through this and plunging it into the wort. Alternatively, if a wort chiller is not available, you can make an ice bath in the sink. Place the kettle in the ice bath and cover it. Wrap the sides and top of the hot kettle in wet paper towel. As the water evaporates from the paper towels, it draws heat from the kettle and wicks up more cold water from the ice bath through capillary action.
+        </div>
+    </div>
+    
+    <div class="onOffp linep8 panel panel-default" id="pFifth">
+        <div class="panel-heading">
+            <h3 class="panel-title">Fermentors</h3>
+        </div>
+        <div class="panel-body">
+            <img src="img/fermentor.jpg">         
+            <br>
+            The fermentor is the vessel in which fermentation occurs. This can be as simple as a bucket. The fermentor needs to have a lid, and an airlock through which gas can escape but not enter. These airlocks can be purchased at any homebrewing or winemaking shop. 
+        </div>
+    </div>
+    
+    <div class="onOffp linep8 panel panel-default" id="pSixth">
+        <div class="panel-heading">
+            <h3 class="panel-title">Analytical</h3>
+        </div>
+        <div class="panel-body">
+            Your most important analytical tool will be your thermometer. I prefer to use an infrared thermometer, so that it doesn't need to contact the product.<br>
+            <img src="img/thermometer.jpg"><br>
+            Litmus paper will allow you to track pH, which is a useful metric for monitoring the mashing, boiling, and fermentation processes.<br>
+            <img src="img/ph.jpg"><br> 
+            Your hydrometer is critical for determining the density of your beer. Measuring density before and after fermentation will allow you to determine the percentage of alcohol in your final product.<br>
+            <img src="img/hydrometer.png"><br> 
+            Many brewers collect data using a microcontroller like the Arduino<br>
+            <img src="img/arduino.jpg"><br> 
+            The Arduino can collect data from thermometers and pH meters throughout the entire process. This data can provide valuable insight to sophisticated brewers. I have yet to try this, but I'll put the results on this site when I do.
+            <br>
+        </div>
+    </div>
+    
+    <div class="onOffp linep8 panel panel-default" id="pSeventh">
+        <div class="panel-heading">
+            <h3 class="panel-title">Dispensing</h3>
+        </div>
+        <div class="panel-body">
+            Beer should be dispensed into sanitized containers and sealed under pressure. 
+            Many people find kegging to be the most convenient method of storing beer. It will require some investment upfront: buying a keg, CO<sub>2</sub> tank, and tap. But if you can swing it, this set up will drastically cut down your unit operations.<br>
+            <img src="img/keg.jpg"> <br>
+            If you don't have access to kegging supplies, bottling is another good option. This requires much greater effort and time investment. Bottles must be cleaned, sanitized, and individually filled and capped. I like to sanitize bottles by baking at 220&degF for three hours, after removing any labels. If you are going to bottle your beer you'll need to get your hands on bottles (about 50 twelve ounce bottles for a five gallon batch), caps, and a bottle capper:<br>
+            <img src="img/capper.jpg">
+            <br>
+        </div>
+    </div>
+    
+    <div class="onOffp linep8 panel panel-default" id="pEighth">
+        <div class="panel-heading">
+            <h3 class="panel-title">Sanitizer</h3>
+        </div>
+        <div class="panel-body">
+            <img src="img/onestep.jpg">         
+            <br>
+            Good sanitization practices are essential in brewing. Every surface that contacts the product after the boil MUST be sanitized. This is critical to prevent unwanted microbes from infecting the beer, which can completely derail the desired fermentation process.
+        </div>
+    </div>
+    
+    <div class="onOffp linep8 panel panel-default" id="pNinth">
+        <div class="panel-heading">
+            <h3 class="panel-title">Automation</h3>
+        </div>
+        <div class="panel-body">            
+            <img src="img/raspberry.png">        
+            The above equipment represents the bare necessities for anyone interested in all-grain brewing. I wanted to include this blurb about automation, which is by no means necessary.<br>
+            <img src="img/raspberry.jpg"><br><sub class="rightText">image from pixabay.com (no attribution required)</sub><br><br>
+            There are numerous open-source projects related to brewing, one of which is <a href="">BrewPi</a> for the RaspBerry Pi. This software provides precise temperature control and temperature timecourse data collection for lagering (discussed on the "Process" page). The Raspberry Pi can control the power output of the compressor on a mini-fridge, and thus regulate the internal temperature in response to measurements. This is high on my list of things to try.
+        </div>
+    </div>
+                 
+</div>    
+
+<style>
+    #equiplink {
+        background: #EEEEEE;
+    }
+</style>

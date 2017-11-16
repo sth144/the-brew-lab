@@ -8,6 +8,10 @@ myAngular.controller('ctrl1', function($scope) {
     $("#navbar li").click(function() {
         $(this).addClass("active");
     });
+
+    $(document).ready(function() {
+        $('.carousel').carousel();
+    });
     
 });
 

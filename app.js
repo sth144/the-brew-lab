@@ -1,8 +1,10 @@
 /**************************************************************
-    Title:
-    Author:
-    Date:
-    Description:
+    Title: Brew Lab Node Index
+    Author: Sean Hinds
+    Date: 11/16/17
+    Description: This node.js app serves as the index for the
+        node express handlebars templating engine used to serve
+        views for the Brew Lab website.
 **************************************************************/
 
 var express = require('express');

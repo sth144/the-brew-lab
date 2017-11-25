@@ -56,17 +56,19 @@ app.get('/table', function(req, res, next) {
     
     console.log('request received');
     var context = {};
-    mysql.pool.query("DROP TABLE IF EXISTS recipes", function(err) {
+    pool.query("DROP TABLE IF EXISTS recipes", function(err) {
         console.log('in1');
         var createString = "CREATE TABLE recipes(" + 
             "id INT PRIMARY KEY AUTO_INCREMENT," + 
             "name VARCHAR(255) NOT NULL," + 
             "url VARCHAR(255) NOT NULL)";
-        mysql.pool.query(createString, function(err) {
+        pool.query(createString, function(err) {
             context.results = "Table reset";
             console.log("Table reset");
+            res.send(context.results);
         });
     }); 
+
 });
 
 // render the home page when redirected to homepage
@@ -135,30 +137,11 @@ app.use(function(request, response) {
 
 // render the 500 page for server errors
 
-app.use(function(error, request, response, next) {
+app.use(function(err, request, response, next) {
     console.error(err.stack);
     response.type('plain/text');
     response.status(500);
     response.render('500');
-});
-
-app.get('/create-table', function(req, res, next) {
-    
-   /* console.log('request received');
-    var context = {};
-    mysql.pool.query("DROP TABLE IF EXISTS recipes", function(err) {
-        console.log('in1');
-        var createString = "CREATE TABLE recipes(" + 
-            "id INT PRIMARY KEY AUTO_INCREMENT," + 
-            "name VARCHAR(255) NOT NULL," + 
-            "url VARCHAR(255) NOT NULL)";
-        mysql.pool.query(createString, function(err) {
-            context.results = "Table reset";
-            console.log("Table reset");
-        });
-    }); */
-
-    res.render('table');
 });
 
 

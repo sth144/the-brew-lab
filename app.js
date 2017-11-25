@@ -46,7 +46,7 @@ app.get('/', function(request, response) {
 
 app.get('/table', function(req, res, next) {
     
-   /* console.log('request received');
+    console.log('request received');
     var context = {};
     mysql.pool.query("DROP TABLE IF EXISTS recipes", function(err) {
         console.log('in1');
@@ -58,9 +58,7 @@ app.get('/table', function(req, res, next) {
             context.results = "Table reset";
             console.log("Table reset");
         });
-    }); */
-
-    res.render('table');
+    }); 
 });
 
 // render the home page when redirected to homepage

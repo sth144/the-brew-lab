@@ -19,7 +19,7 @@ var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 
 // import MySQL pool 
 
-var mysql = require('./dbConfig.js');
+// var mysql = require('./dbConfig.js');
 
 // for running node server locally for development. App uses port 5000
 

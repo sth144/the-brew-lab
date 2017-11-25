@@ -17,9 +17,6 @@ var app = express();
 
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 
-// import MySQL pool 
-
-// var mysql = require('./dbConfig.js');
 
 // for running node server locally for development. App uses port 5000
 
@@ -29,6 +26,11 @@ app.set('port', (process.env.PORT || 5000));
 // the app will look for all static files in public/
 
 app.use(express.static(__dirname + '/public'));
+
+
+// import MySQL pool 
+
+ var mysql = require('./public/js/dbConfig.js');
 
 
 // views is directory for all template files

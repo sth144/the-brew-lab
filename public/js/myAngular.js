@@ -41,7 +41,13 @@ myAngular.controller('ctrl1', function($scope) {
 ***************************************************************************************/
 
 myAngular.controller('mousePop', function($scope) {
+
+
+
+    var clicked = false;
     
+
+
     // These targets appear on both equipment and process pages. This is perfectly fine
 
     var targets =  
@@ -57,6 +63,53 @@ myAngular.controller('mousePop', function($scope) {
     // ng-mouseover=mouseOver($event)
 
     $scope.mouseOver = function(event) {
+       if (!clicked) {
+        var instruct = document.getElementById("instruct");
+        instruct.style.display = "none";
+
+        // iterate through all targets
+
+            for (var j = 0; j < targets.length; j++) {
+
+                var tar = document.getElementById(targets[j][1]);
+
+                // set each target to be invisible
+
+                if (tar) {
+
+                    tar.style.display = "none";
+                    event.stopPropagation;
+
+                }
+            }
+
+
+	    var el = event.target;
+        var i;
+
+        // find the target
+ 
+        for (var j = 0; j < targets.length; j++) {
+
+            if (targets[j][0] == el.id) {
+                i = j;
+            }
+
+        }
+
+        // set target display to inline-block
+
+        var tar = document.getElementById(targets[i][1]);
+        tar.style.display = "inline-block";
+        }
+    };
+
+
+    $scope.mouseClick = function(event) {
+
+        console.log('clicked');
+
+        clicked = true;
 
         var instruct = document.getElementById("instruct");
         instruct.style.display = "none";
@@ -77,7 +130,7 @@ myAngular.controller('mousePop', function($scope) {
             }
         }
 
-	    var el = event.target;
+        var el = event.target;
         var i;
 
         // find the target
@@ -95,7 +148,7 @@ myAngular.controller('mousePop', function($scope) {
         var tar = document.getElementById(targets[i][1]);
         tar.style.display = "inline-block";
 
-    };
+    }; 
     
 
     // this function is called whenever the mouse hovers off of a tag with 

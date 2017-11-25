@@ -13,14 +13,13 @@
 var express = require('express');
 var app = express();
 
-// import MySQL pool 
-
-var mysql = require('./dbConfig.js');
-
 // default layout is main.hbs
 
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 
+// import MySQL pool 
+
+var mysql = require('./dbConfig.js');
 
 // for running node server locally for development. App uses port 5000
 

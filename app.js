@@ -30,7 +30,7 @@ app.use(express.static(__dirname + '/public'));
 
 // import MySQL pool 
 
-var mysql = require('./public/js/dbConfig.js');
+var mysql = require('dbConfig.js');
 /*var pool = mysql.createPool({
     connectionLimit: 10,
     host:     'us-cdbr-iron-east-05.cleardb.net',

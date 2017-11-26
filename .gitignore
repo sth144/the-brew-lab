@@ -4,7 +4,6 @@ npm-debug.log
 
 # config file
 config.js
-dbConfig.js
 
 # Local development
 *.env
